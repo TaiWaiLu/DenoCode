@@ -1,6 +1,5 @@
 {
   "imports": {
-    "@deno/kv": "npm:@deno/kv@0.7.0",
     "hono": "npm:hono@^4.6.9"
   },
   "tasks": {
