@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "@deno/kv": "npm:@deno/kv@^0.8.3",
+    "hono": "npm:hono@^4.6.9"
+  },
+  "tasks": {
+    "start": "deno run --allow-net --allow-write --allow-read --allow-ffi --allow-env main.ts",
+    "build": "deno compile --allow-net --allow-write --allow-read --allow-ffi --allow-env main.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}
