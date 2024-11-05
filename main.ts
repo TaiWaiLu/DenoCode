@@ -2,8 +2,8 @@ import { Hono } from 'hono'
 import { serveStatic } from 'hono/deno'
 import { openKv } from "npm:@deno/kv@0.7.0";
 // const kv = await openKv();
-const kv = await openKv("https://api.deno.com/databases/ef396a4b-4d06-4cb9-acfc-80ddce18122c/connect",
-  { accessToken: "ddp_nySUNMwtEIDnrZ61kJGOdmfNd7OgXB3BTz3q" },);
+const kv = await openKv("https://api.deno.com/databases/ef396a22c/connect",
+  { accessToken: "ddp_nySUNMwtEIDnrd" },);
 
 const app = new Hono()
 app.use('/*', serveStatic({ root: './static/' }))
